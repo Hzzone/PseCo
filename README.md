@@ -84,8 +84,10 @@ wandb login xxx
 
 ### DEMO
 
+This demo uses preprocessed data, and cannot be executed on Colab due to limited resources.
 `demo_fsc147.ipynb` [![Explore in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Hzzone/PseCo/blob/master/demo_fsc147.ipynb)
 
+This demo can be executed on Colab.
 `demo_in_the_wild.ipynb` [![Explore in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Hzzone/PseCo/blob/master/demo_in_the_wild.ipynb)
 
 I am so sorry that I have no time to write an interactive demo.

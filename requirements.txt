@@ -3,3 +3,5 @@ matplotlib==3.5.2
 numpy==1.23.5
 Pillow==9.2.0
 tqdm==4.64.1
+gpustat
+ftfy
