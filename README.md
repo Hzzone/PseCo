@@ -1,6 +1,6 @@
 ## Class-agnostic object counting with PseCo
 
-This repo provides the official implementation of our [PseCo](https://arxiv.org/abs/2311.12386) for class-agnostic object counting, which combines the advantages of two foundation models of computer vision: CLIP and Segment Anything Model.
+This repo provides the official implementation of our [PseCo](https://arxiv.org/abs/2311.12386) (CVPR 2024) for class-agnostic object counting, which combines the advantages of two foundation models of computer vision: CLIP and Segment Anything Model.
 
 > Point, Segment and Count: A Generalized Framework for Object Counting <br>
 > https://arxiv.org/abs/2311.12386 <br>
@@ -97,10 +97,10 @@ I am so sorry that I have no time to write an interactive demo.
 If you found this code or our work useful please cite us:
 
 ```bibtex
-@article{zhizhong2023point,
+@inproceedings{zhizhong2024point,
   title={Point, Segment and Count: A Generalized Framework for Object Counting},
   author={Zhizhong, Huang and Mingliang, Dai and Yi, Zhang and Junping, Zhang and Hongming, Shan},
-  journal={arXiv preprint arXiv:2311.12386},
-  year={2023}
+  booktitle={CVPR},
+  year={2024}
 }
 ```
