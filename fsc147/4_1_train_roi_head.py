@@ -75,7 +75,7 @@ cls_loss2_weight = 1.0
 from ops.loggerx import LoggerX
 
 logger = LoggerX(save_root=f'{project_root}/data/fsc147/checkpoints/cls_head/ckpt/{run_name}',
-                 print_freq=10,
+                 # print_freq=10,
                  name=run_name,
                  enable_wandb=opts.wandb,
                  config=opts,
