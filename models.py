@@ -22,7 +22,13 @@ class ROIHeadMLP(nn.Module):
         embeddings = embeddings.reshape(-1, bboxes[0].size(1), 512)
         embeddings = torch.cat([embeddings[i].unsqueeze(0).repeat(x.size(0), 1, 1) for i, x in enumerate(prompts)])
         prompts = torch.cat(prompts)
-        pred_logits = (embeddings * prompts.unsqueeze(1)).sum(dim=-1)
+        # fix bug when preparing new training data
+        assert len(embeddings.size()) == 3
+        if len(prompts.size()) == 2:
+            prompts = prompts.unsqueeze(1)
+        assert len(prompts.size()) == 3
+        assert (embeddings.size(0) == prompts.size(0) and embeddings.size(-1) == prompts.size(-1))
+        pred_logits = (embeddings * prompts).sum(dim=-1)
         return pred_logits
 
 

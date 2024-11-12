@@ -67,6 +67,7 @@ python train_roi_head.py --wandb --entity zzhuang --zeroshot
 I have provided the preprocessed datasets in:
 * [Google Drive](https://drive.google.com/drive/folders/1pVrJsnB3kYFU10ANkeXGpsFt5mHamnQw?usp=sharing)
 * [Baidu Disk](https://pan.baidu.com/s/1ODBraw6tAAllfgGfLIQcGw) code 3sh1
+* [Hugging Face](https://huggingface.co/Hzzone/PseCo): `huggingface-cli download Hzzone/PseCo`
 
 One may need to merge the split files into single large file:
 ```shell
